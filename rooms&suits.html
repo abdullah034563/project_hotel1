@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        #navbar .container{
+            margin: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px
+        }
+
+        .room-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .room-card img {
+            width: 100%;
+            max-width: 400px;
+            object-fit: cover;
+        }
+
+        .room-info {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .room-info h2 {
+            margin-top: 0;
+            color: #6e3946;
+            font-size: 1.8em;
+        }
+
+        .room-info p {
+            margin: 10px 0;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .room-info .price {
+            font-size: 1.5em;
+            color: #1cc88a;
+            font-weight: bold;
+        }
+
+        .book-now {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1cc88a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .book-now:hover {
+            background-color: #17a673;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">HBT</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms&suits.html">Rooms & Suits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Room 1 -->
+        <div class="room-card">
+            <img src="../project_02/Deluxe-Room-1.webp" alt="Deluxe Room">
+            <div class="room-info">
+                <h2>Deluxe Room</h2>
+                <p>Enjoy a luxurious stay in our Deluxe Room, featuring a king-sized bed, modern decor, and breathtaking city views.</p>
+                <p class="price">$150/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+            <img src="../project_02/family-suite-1.jpg" alt="Family Suite">
+            <div class="room-info">
+                <h2>Family Suite</h2>
+                <p>Perfect for families, this suite offers two queen-sized beds, a spacious living area, and all the comforts of home.</p>
+                <p class="price">$200/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card">
+            <img src="../project_02/luxury-suite.jpeg" alt="Luxury Suite">
+            <div class="room-info">
+                <h2>Luxury Suite</h2>
+                <p>Indulge in ultimate luxury with our top-tier suite, offering premium amenities, private balcony, and unparalleled elegance.</p>
+                <p class="price">$300/night</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <p>Hotel BT &copy; 2019, All rights reserved</p>
+    </footer>
+
+</body>
+</html>

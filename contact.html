@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<style>
+    /* contact form  */
+    #contact-form .form-group{
+        margin-bottom: 20px;
+
+    }
+    #contact-form .label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    #contact-form input,
+    #contact-form textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px #ddd solid;
+    }
+    #contact-form textarea{
+        height: 200px;
+    }
+    #contact-form input:focus,
+    #contact-form textarea:focus{
+        outline: none;
+        border-color: #f7c88a ;
+    }
+    #contact-form .btn{
+         margin-bottom: 20px;
+         text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			justify-content: center;
+  			align-items: center;
+			display: grid;
+    }
+
+
+
+</style>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">HBT</a></h1>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms&suits.html">Rooms & Suits</a></li>
+                    <li><a class="current" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+            <p>Please fill out the form below to contact us</p>
+            <form action=""></form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name"id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email"id="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message"id="message"></textarea>
+            </div>
+            <button type="submit" class="btn " onclick="showmsg()">Sumbit</button>
+        </div>
+    </section>
+   <section id="contact-info"class="bg-dark">
+    <div class="container">
+
+        <div class="box ">
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h3> LOCATION</h3>
+            <p>Johr Town Lahore,Pakistan</p>
+        </div>
+        <div class="box ">
+            <i class="fa-solid fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>(+9234770987651)</p>
+    
+        </div>
+        <div class="box ">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <h3>Email Address </h3>
+            <p> Greenleafhotel@gmail.com</p>
+        </div>
+
+    </div>
+   </section>
+<footer id="main-footer">
+    <p>Hotel BT &copy; 2019,All rights reserved</p>
+
+</footer>
+<script>
+    function showmsg(){
+       
+    alert("Thanks for visiting us!");
+}
+
+    
+</script>
+</body>
+</html>
